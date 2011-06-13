@@ -1,2 +1,0 @@
-ln -s ~/bin/dotfiles/ssh/config ~/.ssh/config
-ln -s ~/bin/dotfiles/screenrc ~/.screenrc
