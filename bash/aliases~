@@ -1,0 +1,18 @@
+
+# Some useful shorthands
+alias h="history"
+alias la="ls -lhAG --color" # list + hidden
+alias ll="ls -oh --color" # list - hidden
+alias tc="top -o cpu" # top sorted by cpu
+alias tm="top -o vsize" # top sorted by memory
+alias ..="cd .." # up one directory level
+
+function take() {
+    mkdir $1
+    cd $1
+}
+
+# Manage my bash configs
+alias reload=". ~/.bashrc" # reload bash config
+alias ea="emacs ~/bin/dotfiles/bash/aliases && reload" # Edit aliases
+alias ee="emacs ~/bin/dotfiles/bash/env && reload" # Edit envoronment
