@@ -13,6 +13,6 @@ function take() {
 }
 
 # Manage my bash configs
-alias reload=". ~/.bashrc" # reload bash config
-alias ea="emacs ~/bin/dotfiles/bash/aliases && reload" # Edit aliases
-alias ee="emacs ~/bin/dotfiles/bash/env && reload" # Edit envoronment
+alias bashreload=". ~/.bashrc" # reload bash config
+alias ea="emacs ~/local/dotfiles/bash/aliases && bashreload" # Edit aliases
+alias ee="emacs ~/local/dotfiles/bash/env && bashreload" # Edit envoronment

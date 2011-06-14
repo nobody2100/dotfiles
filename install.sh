@@ -9,6 +9,10 @@ echo "the path to the dotfiles is $path"
 # bashrc
 #mv ~/.bashrc ~/.bashrc_bak
 echo ". $path/bashrc" > ~/.bashrc
+# decided to make this not so flexible
+#echo ". $path/bash/env" > bashrc
+#echo ". $path/bash/aliases" >> bashrc
+#echo ". $path/bash/config" >> bashrc
 
 # bash_profile: the same as bashrc
 #mv ~/.bash_profile ~/.bash_profile_bak
