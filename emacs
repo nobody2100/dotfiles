@@ -1,7 +1,11 @@
-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; My Personal emacs configuration
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; programming
+; programming 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; C-F11 to compile
@@ -27,9 +31,7 @@
 (setq inhibit-startup-message t)   ;; Don't want any startup message 
 (setq inhibit-splash-screen t) ;; no splash screen either
 
-(setq make-backup-files nil) ;; Don't want any backup files 
-(setq auto-save-list-file-name nil) ;; Don't want any .saves files 
-(setq auto-save-default nil) ;; Don't want any auto saving 
+
 
 (iswitchb-mode 1) ;; switch buffer and list of option is reduced as we type
 (setq iswitchb-buffer-ignore '("*")) ;; no need to lsit buffer that contain a *
@@ -44,6 +46,32 @@
 (setq isearch-allow-scroll t)
 (setq isearch-case-fold-search t)
 
+; regard words in camelCase as separate words
+;(setq subword-mode t) ;; 1 for on, 0 for off
 
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; backup and auto-save files 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;(setq auto-save-list-file-name nil) ;; Don't want any .saves files 
+;(setq auto-save-default nil) ;; Don't want any auto saving 
+
+;(setq make-backup-files nil) ;; Don't want any backup files 
+;(setq make-backup-files t) ;; Want backup files 
+
+; return a backup file path of a give file path
+; with full directory mirroring from a root dir
+; non-existant dir will be created
+; (defun my-backup-file-name (fpath)
+;   "Return a new file path of a given file path.
+; If the new path's directories does not exist, create them."
+;   (let (backup-root bpath)
+;     (setq backup-root "~/.emacs.d/emacs-backup")
+;     (setq bpath (concat backup-root fpath "~"))
+;     (make-directory (file-name-directory bpath) bpath)
+;     bpath
+;   )
+; )
+; (setq make-backup-file-name-function 'my-backup-file-name)
 

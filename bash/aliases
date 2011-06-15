@@ -15,4 +15,4 @@ function take() {
 # Manage my bash configs
 alias bashreload=". ~/.bashrc" # reload bash config
 alias ea="emacs ~/local/dotfiles/bash/aliases && bashreload" # Edit aliases
-alias ee="emacs ~/local/dotfiles/bash/env && bashreload" # Edit envoronment
+alias ee="emacs ~/local/dotfiles/bash/env && bashreload" # Edit environment

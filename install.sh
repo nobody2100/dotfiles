@@ -1,5 +1,13 @@
 #!/bin/bash
 
+##################################################
+##
+## little install script for my configs...
+## (warning: will delete original files)
+##
+##################################################
+
+
 echo -e "This install script will modify the following configuration files in your home directory:\n\t.bashrc\n\t.bash_profile\n\t.emacs\n\t.screenrc"
 
 path=$(pwd)
@@ -29,3 +37,5 @@ ln -sfv $path/ssh/config ~/.ssh/config
 # screenrc
 #mv ~/.screenrc ~/.screenrc_bak
 ln -sfv $path/screenrc ~/.screenrc
+
+
