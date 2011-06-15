@@ -75,3 +75,9 @@
 ; )
 ; (setq make-backup-file-name-function 'my-backup-file-name)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Mathematica mode (mma-mode)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(autoload 'mma-mode "~/local/dotfiles/mma.el" "Mathematica package file mode" t)
+(setq auto-mode-alist
+      (cons '("\\.m\\'" . mma-mode) auto-mode-alist))
