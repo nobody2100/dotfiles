@@ -38,4 +38,7 @@ ln -sfv $path/ssh/config ~/.ssh/config
 #mv ~/.screenrc ~/.screenrc_bak
 ln -sfv $path/screenrc ~/.screenrc
 
+# nautilus scripts
+ln -sfv $path/nautilus/OpenTerminalHere ~/.gnome2/nautilus-scripts/OpenTerminalHere
+
 
