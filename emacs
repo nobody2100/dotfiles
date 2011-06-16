@@ -1,6 +1,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
-;; My Personal emacs configuration
+;; My Personal emacs configuration 
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -58,7 +58,7 @@
 ;(setq auto-save-default nil) ;; Don't want any auto saving 
 
 ;(setq make-backup-files nil) ;; Don't want any backup files 
-;(setq make-backup-files t) ;; Want backup files 
+(setq make-backup-files t) ;; Want backup files 
 
 ; return a backup file path of a give file path
 ; with full directory mirroring from a root dir
