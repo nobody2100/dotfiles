@@ -19,11 +19,11 @@
 (setq-default indent-tabs-mode nil) ;; Prevent Extraneous Tabs
 (setq line-number-mode t) ;; display line numbers
 (setq column-number-mode t) ;; display column numbers
+; display line numbers in margin (fringe). Emacs 23 only.
+;(global-linum-mode t) ;; always show line numbers
 (transient-mark-mode t) ;; highlight text selection
 (delete-selection-mode t) ;; delete seleted text when typing
 (show-paren-mode t) ;; turn on paren match highlighting
-; display line numbers in margin (fringe). Emacs 23 only.
-(global-linum-mode t) ;; always show line numbers
 ; soft wrap words on line breaks
 (global-visual-line-mode 1) ;; 1 for on, 0 for off.
 (setq x-select-enable-clipboard t) ;; solves problem pasting between emacs and other programs
