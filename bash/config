@@ -75,4 +75,7 @@ On_IPurple='\e[10;95m'  # Purple
 On_ICyan='\e[0;106m'    # Cyan
 On_IWhite='\e[0;107m'   # White
 
-PS1="\n\[$Underline\]\u\[$Color_Off\]@\[$High_Color\]\h\[$Color_Off\]:\w \[$Color_Off\] \n\$ "
+#PS1="\n\[$Underline\]\u\[$Color_Off\]@\[$High_Color\]\h\[$Color_Off\]:\w \[$Color_Off\] \n\$ "
+PS1="\[$High_Color\]\u\[$Color_Off\]@\[$Green\]\h\[$Color_Off\]:\[$Yellow\]\w\[$Color_Off\]\$ "
+
+force_color_prompt=yes
