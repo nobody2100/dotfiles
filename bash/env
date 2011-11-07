@@ -1,2 +1,4 @@
 export EDITOR="emacs"
-export PATH=$PATH:~/local/bin
+export PATH=$PATH:$HOME/local/bin
+export PYTHONPATH=$PYTHONPATH:$HOME/local/modules
+export LD_LIBRARY_PATH=$HOME/Packages/local/lib:$LD_LIBRARY_PATH

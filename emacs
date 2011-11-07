@@ -81,3 +81,29 @@ If the new path's directories does not exist, create them."
 (autoload 'mma-mode "~/local/dotfiles/mma.el" "Mathematica package file mode" t)
 (setq auto-mode-alist
       (cons '("\\.m\\'" . mma-mode) auto-mode-alist))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; TeX Settings
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; RefTeX
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex) ; with AUCTeX LaTeX mode
+(add-hook 'latex-mode-hook 'turn-on-reftex) ; with Emacs latex mode
+(setq reftex-plug-into-AUCTeX t)
+
+; AucTeX
+; enable document parsing
+(setq TeX-auto-save t)
+(setq TeX-parse-self t)
+; master file? will ask you each time you open a TeX document
+;(setq-default TeX-master nil)
+(setq TeX-save-query nil)
+; use PDFLaTeX?
+;(setq TeX-PDF-mode t)
+
+; outline mode: Folding and un-folding sections
+;(defun turn-on-outline-minor-mode ()
+;(outline-minor-mode 1))
+;(add-hook 'LaTeX-mode-hook 'turn-on-outline-minor-mode)
+;(add-hook 'latex-mode-hook 'turn-on-outline-minor-mode)
+;(setq outline-minor-mode-prefix "\C-c\C-o") ; Or something else
