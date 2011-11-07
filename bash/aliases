@@ -1,11 +1,12 @@
 
 # Some useful shorthands
 alias h="history"
-alias la="ls -lhAG --color" # list + hidden
-alias ll="ls -oh --color" # list - hidden
+alias la="ls -lhAG --color=always" # list + hidden
+alias ll="ls -oh --color=always" # list - hidden
 #alias tc="top -o cpu" # top sorted by cpu
 #alias tm="top -o vsize" # top sorted by memory
 alias ..="cd .." # up one directory level
+alias ...="cd ../.." # up two directory levels
 
 function take() {
     mkdir $1

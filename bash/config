@@ -79,3 +79,30 @@ On_IWhite='\e[0;107m'   # White
 PS1="\[$High_Color\]\u\[$Color_Off\]@\[$Green\]\h\[$Color_Off\]:\[$Yellow\]\w\[$Color_Off\]\$ "
 
 force_color_prompt=yes
+
+# If not running interactively, don't do anything:
+#[ -z "$PS1" ] && return
+
+# don't put duplicate lines in the history. See bash(1) for more options
+#export HISTCONTROL=ignoredups
+
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+    PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
+    ;;
+*)
+    ;;
+esac
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profiles
+# sources /etc/bash.bashrc).
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
+
+#use some nice keybindings you are used to
+#set -o vi
+set -o emacs
+
