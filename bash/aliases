@@ -1,16 +1,22 @@
 
 # Some useful shorthands
 alias h="history"
-alias la="ls -lhAG --color=always" # list + hidden
-alias ll="ls -oh --color=always" # list - hidden
+alias em="emacs -nw"
+alias la="ls -lhAG" # list + hidden
+alias ll="ls -oh" # list - hidden
 #alias tc="top -o cpu" # top sorted by cpu
 #alias tm="top -o vsize" # top sorted by memory
 alias ..="cd .." # up one directory level
 alias ...="cd ../.." # up two directory levels
+#alias cd="cd $* && pwd"
+alias bhg="history | sed 's/^ *[0-9]* *//' | cat $HISTFILE - | grep "
+alias grep="grep -in --color"
 
-function take() {
-    mkdir $1
-    cd $1
+function cdpwd() {
+         cd $* && pwd
+}
+function mkcd() {
+         mkdir -p $1 && cd $1
 }
 
 # Manage my bash configs

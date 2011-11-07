@@ -1,3 +1,7 @@
-export EDITOR="emacs"
+export EDITOR="em"
 export PATH=$PATH:$HOME/local/bin
-export LD_LIBRARY_PATH=$HOME/local/lib:$HOME/local/lib64:$LD_LIBRARY_PATH
+
+export LD_LIBRARY_PATH=$HOME/Packages/local/lib:$HOME/local/lib:$HOME/local/lib64:$LD_LIBRARY_PATH
+export PYTHONPATH=$PYTHONPATH:$HOME/local/modules
+
+

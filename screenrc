@@ -47,7 +47,8 @@
 #
 #escape ``
 #escape ^^^^
-escape ^aa
+#escape ^aa
+escape ^pp
 
 term xterm-256color
 
